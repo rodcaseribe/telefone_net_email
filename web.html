@@ -1,0 +1,30 @@
+<meta http-equiv="refresh" content="1; url=http://192.168.100.1/mtaLogsData.htm">
+ <FORM action = "http://192.168.100.1/loginData.htm" method = "GET" name="acesso" id="acesso" target="logado" hidden="hidden">
+<CENTER>
+<TABLE align=center border=0 cellPadding=5 cellSpacing=0>
+  <TBODY>
+  <TR>
+    <TH bgColor="#736b08" colspan=2><FONT color="#ffffff">Login</FONT></TH>
+  </TR>
+  <TR>
+    <TD><B>Username</B></TD>
+    <TD><INPUT TYPE=TEXT SIZE=20 MAXLENGTH=20 NAME="loginUsername" value="admin"></TD>
+  </TR>
+  <TR>
+    <TD><B>Password</B></TD>
+    <TD><INPUT TYPE=PASSWORD SIZE=20 MAXLENGTH=20 NAME="loginPassword" value="motorola"></TD>
+  </TR>
+  <TR>
+     <TD colspan =2><CENTER><INPUT name=LOGIN_BUTTON TYPE=PASSWORD VALUE="Login"></CENTER></TD>
+  </TR>
+</TBODY>
+</TABLE>
+</CENTER>
+</FORM>
+<iframe name="logado" id="logado" hidden="hidden"></iframe>
+<h2>Executando processo de autenticação, aguarde...</h2>
+<script>
+    // autentica para o iframe escondido.
+    document.getElementById('acesso').submit();
+ 
+</script>
